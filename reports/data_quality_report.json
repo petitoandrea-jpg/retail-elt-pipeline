@@ -1,0 +1,41 @@
+{
+  "run_timestamp": "2026-10-12T09:54:32.468293",
+  "rows_in_bronze": 6126,
+  "rows_in_silver": 5801,
+  "rows_dropped": 325,
+  "checks": [
+    {
+      "check": "null_values_in_critical_columns",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "check": "exact_duplicate_rows",
+      "passed": true,
+      "details": {
+        "duplicate_rows_found": 0
+      }
+    },
+    {
+      "check": "price_within_expected_range",
+      "passed": true,
+      "details": {
+        "rows_out_of_range": 0
+      }
+    },
+    {
+      "check": "category_in_allowed_values",
+      "passed": true,
+      "details": {
+        "invalid_values_found": []
+      }
+    },
+    {
+      "check": "transaction_date_not_in_future",
+      "passed": true,
+      "details": {
+        "future_rows_found": 0
+      }
+    }
+  ]
+}

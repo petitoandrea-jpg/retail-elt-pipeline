@@ -1,0 +1,86 @@
+{
+  "total_net_revenue": [
+    {
+      "total_net_revenue": 724220.44
+    }
+  ],
+  "revenue_by_store": [
+    {
+      "store_name": "Napoli Vomero",
+      "net_revenue": 184222.96
+    },
+    {
+      "store_name": "Marcianise",
+      "net_revenue": 182248.76
+    },
+    {
+      "store_name": "Caserta",
+      "net_revenue": 181598.72
+    },
+    {
+      "store_name": "Napoli Centro",
+      "net_revenue": 176150.0
+    }
+  ],
+  "top_5_products_by_revenue": [
+    {
+      "product_name": "Scarpe running Pegasus",
+      "category": "Scarpe",
+      "net_revenue": 251979.0,
+      "units_sold": 2100
+    },
+    {
+      "product_name": "Scarpe basket Air",
+      "category": "Scarpe",
+      "net_revenue": 163939.07,
+      "units_sold": 1093
+    },
+    {
+      "product_name": "Giacca a vento",
+      "category": "Abbigliamento",
+      "net_revenue": 89270.08,
+      "units_sold": 992
+    },
+    {
+      "product_name": "Felpa tech fleece",
+      "category": "Abbigliamento",
+      "net_revenue": 73769.46,
+      "units_sold": 1054
+    },
+    {
+      "product_name": "Zaino sportivo",
+      "category": "Accessori",
+      "net_revenue": 46654.63,
+      "units_sold": 1037
+    }
+  ],
+  "revenue_by_category": [
+    {
+      "category": "Scarpe",
+      "net_revenue": 415918.07
+    },
+    {
+      "category": "Abbigliamento",
+      "net_revenue": 224349.26
+    },
+    {
+      "category": "Accessori",
+      "net_revenue": 83953.11
+    }
+  ],
+  "weekend_vs_weekday_avg_daily_revenue": [
+    {
+      "is_weekend": 0,
+      "avg_daily_revenue": 2633.34
+    },
+    {
+      "is_weekend": 1,
+      "avg_daily_revenue": 2701.53
+    }
+  ],
+  "return_rate": [
+    {
+      "return_rate_pct": 5.21
+    }
+  ]
+}

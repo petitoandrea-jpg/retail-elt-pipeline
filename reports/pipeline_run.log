@@ -1,0 +1,9 @@
+2026-10-12 09:54:31,527 | INFO | === Avvio pipeline ELT (Bronze -> Silver -> Gold) ===
+2026-10-12 09:54:31,527 | INFO | Lettura livello BRONZE da /home/claude/retail-elt-pipeline/data/bronze/pos_transactions_raw.csv
+2026-10-12 09:54:31,559 | INFO | Righe grezze lette: 6126
+2026-10-12 09:54:32,455 | INFO | Duplicati rimossi: 126
+2026-10-12 09:54:32,459 | INFO | Righe scartate per dati critici mancanti: 199
+2026-10-12 09:54:32,468 | INFO | Tutti i controlli di data quality superati.
+2026-10-12 09:54:32,512 | INFO | Livello SILVER scritto in /home/claude/retail-elt-pipeline/data/silver/pos_transactions_clean.csv (5801 righe)
+2026-10-12 09:54:32,593 | INFO | Livello GOLD scritto in /home/claude/retail-elt-pipeline/data/gold/retail.db: dim_product(10), dim_store(4), dim_date(273), fact_sales(5801)
+2026-10-12 09:54:32,593 | INFO | === Pipeline completata con successo ===
