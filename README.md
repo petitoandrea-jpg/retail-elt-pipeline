@@ -104,6 +104,32 @@ LIMIT 5;
 Altre query (fatturato per negozio, weekend vs feriale, tasso di reso)
 sono in `src/run_kpi_queries.py`.
 
+## Dashboard Power BI
+
+Sui dati del livello Gold ho costruito una dashboard in Power BI Desktop
+con tre pagine. I dati sono simulati, generati dalla pipeline del progetto.
+
+**Modello:** schema a stella con `fact_sales`, `dim_product`, `dim_store` e
+una tabella `Calendario` creata in DAX, collegata alla data di vendita.
+
+**Misure DAX:** fatturato netto, transazioni, resi, tasso di reso, unità nette,
+fatturato del mese precedente, variazione mensile e fatturato medio giornaliero.
+
+**Pagine:**
+- **Panoramica:** fatturato netto, tasso di reso, transazioni, andamento mensile e fatturato per negozio, con filtro per categoria.
+- **Prodotti:** top 5 per fatturato e matrice con unità, fatturato, resi e tasso di reso per prodotto.
+- **Negozi e periodo:** confronto tra negozi, variazione mensile e fatturato medio giornaliero nel weekend e nei giorni feriali.
+
+![Panoramica](powerbi/screenshots/panoramica.png)
+![Prodotti](powerbi/screenshots/prodotti.png)
+![Negozi e periodo](powerbi/screenshots/negozi.png)
+
+I totali (€ 724.220,44 di fatturato netto, 5.801 transazioni, 5,21% di
+resi) coincidono con quelli delle query SQL in `src/run_kpi_queries.py`.
+
+File: [dashboard_retail.pbix](powerbi/dashboard_retail.pbix) (richiede Power BI Desktop) e [versione PDF](powerbi/dashboard_retail.pdf).
+I CSV usati sono generati da `src/export_gold_to_csv.py` nella cartella `powerbi/data`.
+
 ## Cosa dimostra questo progetto
 
 - Progettazione e implementazione di una pipeline ELT a livelli (Bronze/Silver/Gold)
